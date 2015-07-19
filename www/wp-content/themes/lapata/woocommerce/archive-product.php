@@ -27,39 +27,36 @@
 					<?php
 					if (! is_search() ) {
 						if (! is_shop()) {
-						if ( is_post_type_archive( 'product' ) || is_tax( array( 'product_cat', 'product_tag' ) ) ) {
-							$args = array(); 
-							$output = 'objects'; // or objects
-							$taxonomies = get_taxonomies($args, $output); 
+                            if ( is_post_type_archive( 'product' ) || is_tax( array( 'product_cat', 'product_tag' ) ) ) {
+                                $args = array();
+                                $output = 'objects'; // or objects
 
-							foreach ( $taxonomies as $taxonomy ) {
+                                $taxonomies = array_filter(get_taxonomies($args, $output), function($tax){
+                                    return (substr($tax->name, 3,2) != "xx");
+                                });
 
-								if (substr($taxonomy->name, 3,2) != "xx") {
-									$name_cut=str_replace( 'pa_', '', $taxonomy->name);
-
-									 the_widget(
-										'Custom_WC_Widget_Layered_Nav',
-										array(
-											'title' => $taxonomy->label,
-											'attribute' => $name_cut,
-											'query_type' => 'and',
-											'display_type' => 'dropdown'
-										),
-										array(
-											'before_widget' => '<div class="filter_widget">',
-										    'after_widget' => '</div>',
-										    'before_title' => '<span>',
-										    'after_title' => '</span>',
-										)
-									);
-								}
-							}
-						} 
+                                foreach ( $taxonomies as $taxonomy ) {
+                                    the_widget(
+                                        'Custom_WC_Widget_Layered_Nav',
+                                        array(
+                                            'title' => $taxonomy->label,
+                                            'attribute' => str_replace( 'pa_', '', $taxonomy->name),
+                                            'query_type' => 'and',
+                                            'display_type' => 'dropdown'
+                                        ),
+                                        array(
+                                            'before_widget' => '<div class="filter_widget">',
+                                            'after_widget' => '</div>',
+                                            'before_title' => '<span>',
+                                            'after_title' => '</span>',
+                                        )
+                                    );
+                                }
+                            }
+                        }
 					}
-					}
-
 					?>
-				 </div> 
+				</div>
 				<?php } ?>
 
 				<!-- зона для виджета сортировки по цене и активных фильтров -->
