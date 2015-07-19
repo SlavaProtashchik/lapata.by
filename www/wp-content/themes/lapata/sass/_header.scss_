@@ -1,0 +1,62 @@
+// Bourbon
+// See: http://bourbon.io/docs/
+@import 'header_grid';
+
+header {
+	
+	background-color: $header_color;
+	padding-bottom:0.7em;
+
+	.logo, .search, .cart { padding-top:0.7em; }
+	.logo, .cart {
+		line-height:2.5em;
+		vertical-align:middle;
+	}
+
+	.logo {
+
+		a {
+			color: #fff;
+			font-size:2em;
+			text-transform:uppercase;
+			font-weight:300;
+		}
+		a:hover {text-decoration:none;}
+	}
+
+
+	.search {
+		.form-control {
+			border-radius:0px;
+			border:0px;
+			box-shadow:none;
+			height:2.5em;
+		}
+		.btn-default {
+			border-radius:0px;
+			border: 1px solid $header_search_button;
+			background-color: $header_search_button;
+			color:#fff;
+			outline:none;
+			box-shadow:none;
+			background-image: url('./images/search.png');
+			background-size: cover;
+			min-width:2.5em;
+			height:2.5em;
+		}
+		.btn-default:active {outline:none;}
+		.btn-default:hover {
+			border: 1px solid #ff8800;
+			background-color: #ff8800;
+		}
+	}
+
+	.cart {
+		text-align:right;
+		a {
+			color:#fff;
+		}
+	}
+
+
+}

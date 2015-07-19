@@ -1,0 +1,21 @@
+.pokupka {
+	color:#646473;
+	font-size: 1em;
+	font-weight: 300;
+	.title {
+		margin-top: 1em;
+		font-size: 1.3em;
+		font-weight: 400;
+	}
+	.before_img {
+		@include clearfix();
+		p, .imgcont {
+			float: left;
+		}
+		p{ width: 50%;}
+		.imgcont {
+			width: 25%;
+			text-align: center;
+		}
+	}
+}

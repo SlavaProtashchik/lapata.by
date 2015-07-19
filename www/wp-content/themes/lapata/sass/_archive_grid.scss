@@ -1,0 +1,63 @@
+@import "_mixins.scss";
+@import "_variables.scss";
+
+.archive-sidebar {
+	.row-container {
+		@include make-row();
+
+		.archive {
+			@include make-xs-column(12);
+			@include make-sm-column(12);
+			@include make-md-column(12);
+			@include make-lg-column(10);
+
+			
+			
+			.product-block {
+				@include make-row();
+				.imagecontainer {
+					@include make-xs-column(12);
+					@include make-sm-column(3);
+					@include make-md-column(3);
+					@include make-lg-column(3);
+				}
+				.descrcontainer {
+					@include make-xs-column(12);
+					@include make-sm-column(6);
+					@include make-md-column(6);
+					@include make-lg-column(6);
+				}
+				.pricecontainer {
+					@include make-xs-column(12);
+					@include make-sm-column(3);
+					@include make-md-column(3);
+					@include make-lg-column(3);
+				}
+			}
+
+		}
+
+		.navigation {
+			@include make-xs-column(12);
+			@include make-sm-column(12);
+			@include make-md-column(12);
+			@include make-lg-column(12);
+
+			//@include make-lg-column-pull(2);
+		}
+		.description {
+			@include make-xs-column(12);
+			@include make-sm-column(12);
+			@include make-md-column(12);
+			@include make-lg-column(10);			
+		}
+		.sidebar {
+			@include make-xs-column(12);
+			@include make-sm-column(12);
+			@include make-md-column(12);
+			@include make-lg-column(2);
+
+			//@include make-lg-column-push(10);
+		}
+	}
+}

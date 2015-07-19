@@ -1,0 +1,120 @@
+@import 'contact_delivery_grid';
+
+.contact_delivery_widget {
+	padding-top: 1em;
+	padding-bottom: 1em;
+	background-color: #fff;
+	border: 1px solid #eeeeee;
+	color:#646473;
+	.phones, .work_hours, .consult {
+		text-align: center;
+		margin-bottom: 2em;
+		h2, h3 {
+			font-size: 1em;
+			font-weight: 300;
+			margin-top: 0;
+			margin-bottom: 0.5em;
+		}
+		p {
+			margin: 0;
+		}
+	}
+	.phones {
+		p {
+			font-weight: 400;
+			font-size: 1em;
+			padding: 0.2em 0em;
+			position:relative;
+			.prefix {
+				font-size: 0.7em;
+				font-weight: 300;
+				padding-right: 0.5em;
+				padding-left: 2.5em;
+			}
+		}
+		.velcom .prefix{
+			background:transparent url('./images/contact_icons/velcom.png') no-repeat scroll 0% 0%;
+			background-size: contain;
+		}
+		.mts .prefix{
+			background:transparent url('./images/contact_icons/mts.png') no-repeat scroll 0% 0%;
+			background-size: contain;
+		}
+		.life .prefix{
+			background:transparent url('./images/contact_icons/life.png') no-repeat scroll 0% 0%;
+			background-size: contain;
+		}
+		.home .prefix{
+			background:transparent url('./images/contact_icons/home.png') no-repeat scroll 0% 0%;
+			background-size: contain;
+		}
+	}
+	.work_hours {
+		.hours {
+			font-size: 1.3em;
+		}
+		.days {
+			font-size: 1em;
+			font-weight: 300;
+			text-decoration: underline;
+		}
+	}
+	.consult {
+		p {
+			font-weight: 300;
+			font-size: 1em;
+			padding: 0.2em 0em;
+			position:relative;	
+			.prefix {
+				padding-left: 2em;
+			}		
+		}
+		.skype .prefix{
+			background:transparent url('./images/contact_icons/skype.png') no-repeat scroll 0% 0%;
+			background-size: contain;
+		}
+		.mail .prefix{
+			background:transparent url('./images/contact_icons/mail.png') no-repeat scroll 0% 0%;
+			background-size: contain;
+			font-size: 0.8em;
+			padding-left: 2.5em;
+		}
+	}
+	.delivery {
+		.delivery-image-container {
+			width: 100%;
+			text-align: center;
+			img {
+				width: 50%;
+				height: auto;
+			}
+		}
+		.common_description {
+			margin-top: 1em;
+			p {
+				font-weight: 300;
+				font-size: 1em;
+				color:#646473;
+				line-height: 1em;
+				padding-left: 1em;
+				padding-right: 1em;
+				text-align: center;
+				margin-bottom:0.5em;
+			}
+			.delivery-cutoff {
+				font-size: 1em;
+				font-weight: 400;
+				text-align: center;
+			}
+			.regions {
+				text-align: center;
+				margin-top: 1em;
+				a {
+					font-size: 1em;
+					color:#646473;
+					text-decoration: underline;
+				}
+			}
+		}		
+	}
+}

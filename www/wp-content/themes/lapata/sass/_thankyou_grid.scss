@@ -1,0 +1,43 @@
+@import "_mixins.scss";
+@import "_variables.scss";
+	
+.maincontent-sidebar {
+	.row-container {
+		@include make-row();
+
+		.maincontent {
+			@include make-xs-column(12);
+			@include make-sm-column(12);
+			@include make-md-column(12);
+			@include make-lg-column(10);
+
+			.woocommerce {
+				@include make-row();
+				.left-container {
+					@include make-xs-column(12);
+					@include make-sm-column(12);
+					@include make-md-column(7);
+					@include make-lg-column(7);		
+				}
+				.right-container {
+					@include make-xs-column(12);
+					@include make-sm-column(12);
+					@include make-md-column(5);
+					@include make-lg-column(5);		
+				}
+			}
+			
+		}
+
+
+		.sidebar {
+			@include make-xs-column(12);
+			@include make-sm-column(12);
+			@include make-md-column(12);
+			@include make-lg-column(2);
+		}
+
+	}
+}
+
+

@@ -1,0 +1,53 @@
+
+/**
+ * Star ratings
+ */
+.star-rating {
+	overflow: hidden;
+	position: relative;
+	height: 1em;
+	line-height: 1;
+	font-size: 1em;
+	width: 6.5em;
+	font-family: 'star';
+	color:$rate-star-color;
+	letter-spacing:2px;
+	font-family: 'star';
+
+	&:before {
+		content: "\73\73\73\73\73";
+		/*color: darken( $rate-star-color, 10% );*/
+		color:$rate-star-color;
+		float: left; 
+		top: 0;
+		left: 0;
+		position: absolute;
+	}
+
+	span {
+		overflow: hidden;
+		float: left; 
+		top: 0;
+		left: 0;
+		position: absolute;
+		padding-top: 1.5em;
+	}
+
+	span:before {
+		content: "\53\53\53\53\53";
+		top: 0;
+		position: absolute;
+		left: 0;
+	}
+}
+
+.woocommerce-product-rating {
+	@include clearfix();
+	line-height: 2;
+	display: block;
+
+	.star-rating {
+		margin: .5em 4px 0 0;
+			float: left; 
+	}
+}

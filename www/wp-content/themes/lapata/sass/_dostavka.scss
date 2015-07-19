@@ -1,0 +1,27 @@
+.dostavka {
+	color:#646473;
+	font-size: 1em;
+	font-weight: 300;
+	.title {
+		margin-top: 1em;
+		font-size: 1.3em;
+		font-weight: 400;
+	}
+	.city-reg {
+		padding-left: 1em;
+		display: inline-block;
+	}
+	a {
+		margin-top: 1em;
+		font-size: 1em;
+		font-weight: 400;
+		text-decoration: underline;
+		padding-left: 30px;
+		color:#646473;
+		vertical-align: middle;
+		background:transparent url('./images/excel.png') no-repeat scroll 0% 0%;
+		background-size: contain;
+	}
+	a:hover, a:active {color:#646473;}
+
+}

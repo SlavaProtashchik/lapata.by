@@ -1,0 +1,84 @@
+/*
+Theme Name:   	lapata
+Theme URI:    	http://www.lapata.by/
+Author:       	lapata.by
+Author URI:		http://www.lapata.by/
+Description:  	Theme for e-commerce shop lapata.by
+Version:      	0.1.0
+License:      	lapata license
+Text Domain:  	lapata.by
+*/
+
+// Bourbon
+// See: http://bourbon.io/docs/
+//@import 'bourbon';
+
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:100,300,400,700&subset=latin,cyrillic-ext);
+
+/*
+@font-face {
+  font-family: 'Orbitron';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Orbitron-Bold'), url(http://fonts.gstatic.com/s/orbitron/v6/Y82YH_MJJWnsH2yUA5AuYY4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+*/
+@import url(http://fonts.googleapis.com/css?family=Orbitron:400,500,700,900);
+
+@font-face {
+	font-family: 'star';
+	src: url('fonts/star.eot');
+	src: url('fonts/star.eot?#iefix') format('embedded-opentype'),
+		url('fonts/star.woff') format('woff'),
+		url('fonts/star.ttf') format('truetype'),
+		url('fonts/star.svg#star') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+// Vendors
+// External libraries and frameworks
+@import 'sass/vendors/reset';
+
+  
+  
+ 
+// main elements
+// External libraries and frameworks
+@import 'sass/vars_mixins';
+
+
+@import 'sass/body';
+
+
+//оформление стиоя рейтинга (звездочек)
+@import 'sass/rates';
+
+@import 'sass/header';
+
+@import 'sass/main';
+
+@import 'sass/_flyout-cart';
+
+@import 'sass/archive';
+
+@import 'sass/single';
+
+@import 'sass/media';
+
+@import 'sass/cart';
+
+@import 'sass/checkout';
+
+@import 'sass/thankyou';
+
+@import 'sass/contact_delivery';
+
+@import 'sass/footer';
+
+@import 'sass/pokupka';
+
+@import 'sass/dostavka';
+
+@import 'sass/404';

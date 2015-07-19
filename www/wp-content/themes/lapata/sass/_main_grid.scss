@@ -1,0 +1,100 @@
+@import "_mixins.scss";
+@import "_variables.scss";
+	
+.maincontent-sidebar {
+	.row-container {
+		@include make-row();
+
+		.maincontent {
+			@include make-xs-column(12);
+			@include make-sm-column(12);
+			@include make-md-column(12);
+			@include make-lg-column(10);
+
+				.menu-slider {
+					.row-container {
+						@include make-row();
+
+						.menu {
+							@include make-xs-column(12);
+							@include make-sm-column(12);
+							@include make-md-column(3);
+							@include make-lg-column(3);
+						} 
+						.slider {
+							@include make-xs-column(12);
+							@include make-sm-column(12);
+							@include make-md-column(9);
+							@include make-lg-column(9);
+						}
+
+					}
+				}
+
+				.mainpage-widget-area {
+					.row-container {
+						@include make-row();
+
+						.title {
+							@include make-xs-column(12);
+							@include make-sm-column(12);
+							@include make-md-column(12);
+							@include make-lg-column(12);
+						}
+
+
+						.line_item {
+							@include make-xs-column(12);
+							@include make-sm-column(4);
+							@include make-md-column(3);
+							@include make-lg-column(3);
+						}
+
+						._3line {
+							@include make-xs-column(6);
+							@include make-sm-column(4);	
+							@include make-md-column(3);	
+							@include make-lg-column(3);							
+						}
+						._0line {
+							@include make-xs-column(12);
+							@include make-sm-column(4);
+							@include make-md-column(3);
+							@include make-lg-column(3);							
+						}
+						._4line {
+							@include make-xs-column(12);
+							@include make-sm-column(6);
+							@include make-md-column(4);
+							@include make-lg-column(4);							
+						}
+						._5line {
+							@include make-xs-column(12);
+							@include make-sm-column(6);
+							@include make-md-column(5);
+							@include make-lg-column(5);		
+			
+						}						
+
+
+					}
+				}
+
+		}
+		.sidebar {
+			@include make-xs-column(12);
+			@include make-sm-column(12);
+			@include make-md-column(12);
+			@include make-lg-column(2);
+		}
+		.index-descr {
+			@include make-xs-column(12);
+			@include make-sm-column(12);
+			@include make-md-column(12);
+			@include make-lg-column(10);			
+		}
+
+	}
+}
+
+

@@ -1,0 +1,212 @@
+@import 'cart_grid';
+
+.maincontent-sidebar {
+	.row-container {
+		.maincontent {
+			h2 {
+				margin: 0;
+				font-size: 2em;
+				color: #646473;
+				font-weight: 300;
+			}
+			.woocommerce {
+				margin-top: 2em;
+				.woocommerce-message, .cart-empty ,.return-to-shop {
+					font-size: 1em;
+					font-weight: 300;
+					color:#646473;	
+					margin-bottom: 1em;	
+					padding-left:5px;
+					a {
+						color:$red;
+					}		
+				}
+				.return-to-shop:hover {
+					text-decoration: underline;
+				}
+				.woocommerce-error {
+					color:$red;
+					font-size: 1em;
+					font-weight: 300;
+					padding-left: 5px;
+				}
+
+				.cart_table_cont {
+					margin: 5px 0px;
+					.cart_table_row {
+						padding:1em 0em;
+						background-color: #fff;
+						border: 1px solid #eeeeee;
+						margin: 0;
+						height: 100%;
+						.product-thumbnail {
+							text-align: center;
+							//@include valign();
+							img {
+								max-height: 98px;
+								max-width: 147px;
+							}
+						}
+						.product-name {
+							text-align: center;
+							a {
+								font-size: 1em;
+								font-weight: 300;
+								color:#646473;
+							}
+						}
+						.product-price {
+							text-align: center;
+							.amount, .multiply-eql {
+								text-align:center;
+								font-weight:300;
+								font-size: 0.9em;
+								color:#646473;
+								//display: block;
+								margin: 0;
+							}
+							.quantity {
+								display: inline-block;
+								>input {
+									width:2em;
+									text-align: center;
+									font-weight:300;
+									font-size: 0.9em;
+									color:#646473;
+									border:1px solid #cbcbcb;
+								}
+							}
+							.multiply-eql + .amount {
+								font-weight:700;
+								font-size: 1.1em;
+								margin-top: 0.5em;
+								display: block;
+							}
+							.remove {
+								vertical-align: middle;
+								color:$red;
+								display: block;
+								margin-top: 0em;
+								font-size: 2.4em;
+							}
+							.remove:hover, .remove:active {
+								text-decoration: none;
+								color:$red;
+							}
+							
+						}
+					}
+				}
+				
+
+				.cart-collaterals {
+					.coupon {
+						margin-top: 2em;
+						text-align: center;
+						>input {
+							font-weight:300;
+							color:#646473;
+							border:1px solid #cbcbcb;
+							width:40%;
+							padding: 0.3em;
+							text-align: center;
+						}
+						.button {
+							padding: 0.3em;
+							width:40%;
+							display: inline-block;
+							border: 1px solid #cbcbcb;
+							color: #fff;
+							text-align: center;
+							text-decoration: none;
+							cursor: pointer;
+							position: relative;
+							font-size:1em !important;
+							font-family: inherit;
+							overflow: visible;
+							background-color: #cbcbcb;				
+						}
+						.button:hover {
+							background-color: #bbbbbb;	
+							border: 1px solid #bbbbbb;
+						}
+					}
+					.smbbut {
+						margin-top: 6px;
+						>.button {
+							width:80%;
+							padding: 0.1em;
+							display: block;
+							border: 0;
+							color: #fff;
+							text-align: center;
+							text-decoration: none;
+							cursor: pointer;
+							position: relative;
+							font-size:1.3em !important;
+							font-weight: 300;
+							font-family: inherit;
+							overflow: visible;
+							background-color: #646473;	
+							margin:0 auto;			
+						}
+						>.button:hover {
+							opacity:0.8;	
+						}
+					}	
+					.cart_totals  {
+						margin-top: 3em;
+						>table{
+							margin:0 auto;
+							font-weight: 300;
+							font-size: 1em;
+							color:#646473;
+							width: 80%;
+							td {text-align: center;}
+							th, td {padding:0.2em 0em;}
+							.shipping {
+								.woocommerce-shipping-calculator {
+									.shipping-calculator-button {
+										padding-top: 0.2em;
+										color:#646473;
+										text-decoration: underline;
+									}
+								}
+							}
+							.order-total {
+								th {
+									font-weight: 700;
+								}
+								strong {
+									font-weight: 700;
+									font-size: 1.3em;
+								}
+							}
+						}
+						.wc-proceed-to-checkout {
+							margin-top: 2em;
+							.checkout-button {
+								width:80%;
+								padding: 0.1em;
+								display: block;
+								border: 0;
+								color: #fff;
+								text-align: center;
+								text-decoration: none;
+								cursor: pointer;
+								position: relative;
+								font-size:1.3em !important;
+								font-weight: 300;
+								font-family: inherit;
+								overflow: visible;
+								background-color: $orange;	
+								margin:0 auto;								
+							}
+						}
+						
+					}				
+				}
+			}
+		}
+	}
+}

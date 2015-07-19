@@ -1,0 +1,111 @@
+$red: #FF6347;
+$orange: #FFA547;
+
+$body-color: #f8f8f9;
+
+$header_color: #fff;
+$header-logo-text-color: #646473;
+$header_search_button:$red;
+$header-search-border:#cbcbcb;
+$header-border:#eeeeee;
+
+$smenu-firstlev-bcg-color:#fff;
+$smenu-current-firstlev-item-bcg-color: #fff;
+$smenu-current-firstlev-item-color: #333;
+$smenu-current-seclev-item-bcg-color: $red;
+$smenu-bottom-border-color:#eeeeee;
+$smenu-text-color: #646473;
+$smenu-dropdown-open-bcg-color: #fff;
+$smenu-dropdown-border-top-color: #d3d3d4;
+$smenu-dropdown-border-bottom-color: #d3d3d4;
+$smenu-dropdown-bcg-color: #fff;
+$smenu-dropdown-text-color: #646473;
+//mainpage -> mp
+$mp-border-product-color: #eeeeee;
+$mp-title-color: #646473;  //#f7ca19//
+$mp-container-bg:#fff;
+$mp-product-title-color:#646473;
+$mp-price-color:#646473;
+$mp-price-del-color:#cbcbcb;
+$mp-price-ins-color:#646473;
+//mainpage color end
+
+//rate stars
+$rate-star-color:$orange;
+//end rate stars
+
+//widgets
+$widget-cart-total-items-color: #fff;
+$widget-cart-total-items-bkg-color: #cbcbcb;
+$widget-cart-total-items-border-color: #cbcbcb;
+$widget-cart-icon-color: #646473;
+$widget-cart-icon-hover-color: $red;
+$widget-cart-border-color: #eeeeee;
+$widget-cart-bcg-color: #fff;
+$widget-cart-separator-color: #dddddd;
+$widget-cart-text-color: #646473;
+$widget-cart-subtotal-bkg-color:#646473;
+$widget-cart-subtotal-color:#fff;
+$widget-cart-button-text-color:#fff;
+$widget-cart-viewcart-button-color:#fff;
+$widget-cart-checkout-button-color:$orange;
+
+$archive-breadcrumb-color: #646473;
+$archive-page-title-color: #646473;
+$archive-bcg-color: #f8f8f9;
+$archive-product-block-bcg-color:#fff;
+$archive-product-block-border-color:#eeeeee;
+$archive-product-descr-title-color:#646473;
+$archive-product-descr-out-color:#646473;
+$archive-product-descr-more-link-color:#646473;
+$archive-price-color:#646473;
+$archive-price-del-color:#cbcbcb;
+$archive-price-ins-color:#646473;
+$archive-cart-button-text-color:$red;
+$archive-cart-viewcart-button-color:#fff; //f97e16;
+
+$nav-page-num-current-color: #fff;
+$nav-page-num-color: #646473;
+$nav-page-num-next-color: #646473;
+$nav-page-num-prev-color: #646473;
+
+
+@mixin clearfix() {
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+@mixin valign2() {
+	display:flex;
+	align-items:center;
+} 
+@mixin valign() {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+@mixin vsbetween() {
+    display:flex;
+    flex-wrap: wrap;
+    align-content:space-between;
+}
+
+@mixin vsaround() {
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+}
+
+@mixin equalheight() {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+

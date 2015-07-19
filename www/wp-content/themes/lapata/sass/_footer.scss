@@ -1,0 +1,54 @@
+@import 'footer_grid';
+
+footer {
+	background-color: #646473;
+	margin-top: 2em;
+	padding-top: 2em;
+	padding-bottom: 1em;
+	color:#fff;
+	font-size: 1em;
+	font-weight: 300;
+	p {
+		color:#fff;
+		font-size: 1.3em;
+		margin-bottom: 1em;
+		font-weight: 400;
+	}
+	ul {
+		li {
+			font-size: 1em;
+			padding-bottom: 0.2em;
+			a {
+				color:#fff;
+			}
+			a:hover, a:active, a:visited {
+				color:#fff;
+			}
+		}
+	}
+	.about {
+		.copyright {
+			font-weight: 300;
+			a {
+				color:#fff;
+			}
+		}
+
+	}
+	.contacts {
+		.rest-contacts {
+			margin-top: 1em;
+		}
+	}
+	.reginfo {
+		font-size: 0.9em;
+		p {
+			font-weight: 300;
+		}
+		.info {
+			li {
+				padding-bottom: 0em;				
+			}
+		}
+	}
+}

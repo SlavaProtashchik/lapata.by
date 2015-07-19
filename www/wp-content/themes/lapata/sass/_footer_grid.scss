@@ -1,0 +1,35 @@
+@import "_mixins.scss";
+@import "_variables.scss";
+
+footer {
+	.row-container {
+		@include make-row();
+
+		.about {
+			@include make-xs-column(12);
+			@include make-sm-column(4);
+			@include make-md-column(4);
+			@include make-lg-column(3);
+		}
+
+		.popular {
+			@include make-xs-column(12);
+			@include make-sm-column(4);
+			@include make-md-column(4);
+			@include make-lg-column(3);
+		}
+
+		.contacts {
+			@include make-xs-column(12);
+			@include make-sm-column(3);
+			@include make-md-column(3);
+			@include make-lg-column(3);
+		}
+		.reginfo {
+			@include make-xs-column(12);
+			@include make-sm-column(4);
+			@include make-md-column(4);
+			@include make-lg-column(3);
+		}
+	}
+}
